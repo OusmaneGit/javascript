@@ -3,20 +3,22 @@
 <head>
 	<title>Javascript</title>
     <script type="text/javascript">
-       function SayHello() {
-           document.write("Say Hello");
-       }
+        function over() {
+            document.write("Mouse over")
+
+        }
+        function out() {
+            document.write("Mouse out");
+        }
         //
     </script>
 
 </head>
 	<body>
-
-    <p>Click the following button to call the function</p>
-     <form>
-         <input type="button" onclick="SayHello()" value="Say Hello">
-     </form>
-
+      <p>Bring your </p>
+    <div onmouseover="over()"  onmouseout="out()">
+        <p>This is inside the division</p>
+    </div>
     <p>Set the variable to different value and then try...</p>
 
     </body>
